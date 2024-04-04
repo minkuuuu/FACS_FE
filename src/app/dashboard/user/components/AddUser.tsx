@@ -35,7 +35,7 @@ export default function AddUser({ token }: { token: string | undefined }) {
     return (
         <div style={{maxWidth: "fit-content"}} >
             <button
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                className="bg-amber-700 text-white hover:cursor-pointer hover:bg-red-600 font-bold py-2 px-4 mx-2 rounded"
                 onClick={() => setShowModal(true)}
             >
                 Add User

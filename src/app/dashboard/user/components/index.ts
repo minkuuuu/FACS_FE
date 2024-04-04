@@ -1,3 +1,5 @@
 import UpdateUser from "./UpdateUser";
 import AddUser from './AddUser';
-export {AddUser , UpdateUser};
+import Filter from "./Filter";
+import Pagination from "./Pagination"
+export {AddUser , UpdateUser , Filter , Pagination};

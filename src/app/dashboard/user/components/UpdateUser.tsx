@@ -32,7 +32,7 @@ export default function UpdateUser({ userId, onUpdate , token }: { userId: strin
     return (
         <div>
             <button
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                className="bg-amber-700 text-white hover:cursor-pointer hover:bg-red-600 font-bold py-2 px-4 rounded"
                 onClick={() => setShowModal(true)}
             >
                 Update
