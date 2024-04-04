@@ -28,9 +28,9 @@ export default function RecordRow({
       <td className="border px-4 py-2">{predictedPercent}</td>
       <td className="border px-4 py-2">{createdDate}</td>
       <td className="border px-4 py-2">
-        <button className="bg-amber-700 text-white hover:cursor-pointer hover:bg-red-600 font-bold py-2 px-4 rounded" href="/dashboard/record/[recordId]" as={`/dashboard/record/${recordId}`}>
+        <Link className="bg-amber-700 text-white hover:cursor-pointer hover:bg-red-600 font-bold py-2 px-4 rounded" href="/dashboard/record/[recordId]" as={`/dashboard/record/${recordId}`}>
           Details
-        </button>
+        </Link>
       </td>
     </tr>
   );
