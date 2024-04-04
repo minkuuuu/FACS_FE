@@ -1,2 +1,4 @@
 import RecordRow from "./RecordRow";
-export { RecordRow };
+import Filter from "./Filter"
+import Pagination from "./Pagination"
+export { RecordRow, Filter, Pagination};

@@ -21,7 +21,7 @@ export default async function User({ searchParams }: SearchParamsProps, token: s
     <div >
       <div className="container shadow-xl mx-12 my-5 border-2 border-slate-500 rounded-lg "  >
 
-      <div className="mt-3 text-4xl font-medium leading-none tracking-tight text-gray-900 md:text-4xl lg:text-4xl dark:text-white py-3 ml-11">Users</div>
+        <div className="mt-3 text-4xl font-medium leading-none tracking-tight text-gray-900 md:text-4xl lg:text-4xl dark:text-white py-3 ml-11">Users</div>
 
 
         <div className="mb-4 flex justify-end mr-10">
@@ -39,7 +39,7 @@ export default async function User({ searchParams }: SearchParamsProps, token: s
               <tr>
                 <th className="border px-4 py-2">Security Code</th>
                 <th className="border px-4 py-2 w-72">Email</th>
-                <th className="border px-4 py-2 w-60">Name</th>
+                <th className="border px-4 py-2 w-52">Name</th>
                 <th className="border px-4 py-2">Phone</th>
                 <th className="border px-4 py-2">Role</th>
                 <th className="border px-4 py-2">Status</th>
@@ -48,7 +48,7 @@ export default async function User({ searchParams }: SearchParamsProps, token: s
             </thead>
             <tbody>
               {user.map((user) => (
-                <tr key={user.id}>
+                <tr key={user.id} className="hover:bg-gray-200" >
                   <td className="border px-4 py-2">{user.securityCode}</td>
                   <td className="border px-4 py-2">{user.email}</td>
                   <td className="border px-4 py-2">{user.name}</td>
@@ -63,8 +63,8 @@ export default async function User({ searchParams }: SearchParamsProps, token: s
             </tbody>
           </table>
         </div>
-        <div className='flex justify-center'> 
-          <Pagination/>
+        <div className='flex justify-center'>
+          <Pagination />
         </div>
       </div>
     </div>
