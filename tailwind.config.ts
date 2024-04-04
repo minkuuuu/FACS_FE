@@ -9,6 +9,9 @@ const config: Config = withMT({
   ],
   theme: {
     extend: {},
+    container: {
+      center: true,
+    },
   },
   plugins: [],
 });

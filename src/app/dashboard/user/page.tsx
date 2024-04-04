@@ -19,8 +19,14 @@ export default async function User({ searchParams }: SearchParamsProps, token: s
 
   return (
     <div>
-      <div className="mb-4">
+      <div className="container p-10" >
+
+     
+      <div className="mb-4 flex justify-end">
+        <div>
         <AddUser token={token}/>
+        </div>
+        
       </div>
       <table>
         <thead>
@@ -50,6 +56,7 @@ export default async function User({ searchParams }: SearchParamsProps, token: s
           ))}
         </tbody>
       </table>
+      </div>
     </div>
   );
 }
